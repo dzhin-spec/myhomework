@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #db7f7f;
+    padding: 14px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('https://masters-project.ru/wp-content/uploads/2024/03/2024-03-14-13.07.21-e1710411369681.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 14px 20px;
+    height: 400px; 
+}
+
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+.menu {
+    display: flex;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.icon:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 20px;
+}
+
+h1 {
+    color: #272768;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #15313b;
+    line-height: 1.6;
+}
