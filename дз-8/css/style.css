@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    height: 2000px;
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
+.fixed-rectangle {
+    position: fixed;
+    left: 50vw;
+    right: 50px;
+    bottom: 100px;
+    min-height: 100px;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    }
+
+.red-circle {
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    right: -20%
+}
