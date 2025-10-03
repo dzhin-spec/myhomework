@@ -1,0 +1,232 @@
+:root {
+    --general-text: #111111;
+    --general-bg: #FFFFFF;
+    --general-bg-2: #F8F8F8;
+    --accent-text: #000000;
+    --accent-bg-2: #C5358C;
+
+}
+
+.body {
+    font-family: "Arial", sans-serif;
+    color: var(--general-text);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1378px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main__categories {
+    padding: 150px 0;
+}
+
+.main__expert-reviews {
+    padding-top: 150px;
+}
+
+.main__benefits {
+    padding: 150px 0 150px 0;
+}
+
+.main__offers {
+    padding: 150px 0;
+}
+
+.main__reviews {
+    padding: 150px 0;
+}
+
+.main__faq {
+    padding: 150px 0;
+}
+
+.main__news {
+    padding: 150px 0;
+}
+
+.main__contact-subscribe {
+    padding: 150px 0;
+}
+
+.title {
+    color: var(--general-text);
+    font-family: "NAMU Pro";
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.field {
+    position: relative;
+    display: block;
+}
+
+/* модалкаааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: var(--general-bg);
+    margin: 5% auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal__title {
+    color: var(--general-text);
+    font-family: "NAMU Pro";
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.review-form {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.mark {
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #ababab;
+    line-height: 25px;
+}
+
+.rating-input {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 15px;
+}
+
+.rating-input .star {
+    width: 40px;
+    height: 40px;
+}
+
+.rating-input .star svg {
+    cursor: pointer;
+    fill: #e0e0e0;
+    stroke: #999;
+    stroke-width: 1px;
+}
+
+.rating-input .star.active svg {
+    stroke: black;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.file-upload {
+    border: 2px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.file-upload {
+    color: #ababab;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.file-upload:hover {
+    border-color: #aaa;
+}
+
+.upload-photo {
+    color: var(--accent-bg-2);
+    line-height: 25px;
+}
+
+.upload-photo__underline {
+    width: 136px;
+    height: 0;
+    border: 1px solid var(--accent-bg-2);
+    margin: 0 0 15px 180px;
+
+}
+
+.submit-btn {
+    position: relative;
+    width: 275px;
+    height: 64px;
+    color: var(--general-bg);
+    font-size: 24px;
+    line-height: 33px;
+    border-radius: 3px;
+    background: var(--general-text);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 10px;
+}
+
+.review-date {
+    color: #777;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 10px;
+}

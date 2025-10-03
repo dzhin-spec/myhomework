@@ -1,0 +1,85 @@
+.footer {
+    color: var(--general-bg);
+    background: var(--general-text);
+    height: 519px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer__header {
+    margin-bottom: 30px;
+}
+
+.footer__title {
+    font-family: "NAMU Pro";
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.footer__col {
+    max-width: 344px;
+}
+
+.footer__logo img {
+    width: 183px;
+    position: relative;
+    left: -8px;
+    min-height: 77px;
+    padding-top: 50px;
+    margin-bottom: 25px;
+}
+
+.footer__list {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-right: 39px;
+}
+
+.footer__shop-item {
+    margin-bottom: 6px;
+}
+
+.footer__info-item {
+    margin-bottom: 6px;
+}
+
+.footer__stocks-list {
+    margin-bottom: 129px;
+}
+
+.footer__stocks-item {
+    margin-bottom: 6px;
+}
+
+.footer__number {
+    line-height: 1.5;
+    margin-bottom: 54px;
+}
+
+.footer__number a {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.socials__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer__col-copy {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+    width: 529px;
+}

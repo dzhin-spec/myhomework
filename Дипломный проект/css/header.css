@@ -1,0 +1,195 @@
+.header__top {
+    background: var(--general-text);
+    height: 90px;
+}
+
+.header__top-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: none;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--general-bg);
+    
+    transition: all .3s;
+}
+
+.burger-icon:hover span,
+.burger-icon:hover span::before,
+.burger-icon:hover span::after {
+    background: var(--accent-bg-2);
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: 10px;
+}
+
+.burger-icon span::after {
+    bottom: 10px;
+}
+
+.body--opened-menu .nav {
+    transform: translateY(0%);
+    display: block;
+    opacity: 1;
+}
+
+.body--opened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}
+
+.header__hero {
+    padding: 50px 0 140px;
+}
+
+.header-logo {
+    max-width: 183px;
+    z-index: 2;
+}
+
+.header-logo img {
+    width: 183px;
+    height: 77px;
+}
+
+.nav {
+    font-family: 'NAMU Pro';
+    color: var(--general-bg);
+    margin: 31px 0 35px 0;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: left;
+}
+
+.nav__list {
+    display: flex;
+    gap: 5vh 30px;
+    padding: 0 60px 0 50px;
+    white-space: nowrap;
+}
+
+.header-bag-div {
+    display: flex;
+}
+
+.header-bag-div path {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    width: 36px;
+    height: 36px;
+}
+
+.header-bag-div:hover path {
+    stroke: var(--accent-bg-2);
+}
+
+.cart-count {
+    display: inline-block;
+    background: var(--general-bg);
+    color: var(--accent-text);
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    margin: 17px 0 0 5px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+/* ???????????????????????????????????????????????????????????????? */
+
+.hero {
+    height: 850px;
+    background: url(../img/content/hero-bg.png) 50% 100% / 90% no-repeat;
+    background-color: #DDDDDD;
+
+    background-image: url(../img/content/girl.png); 
+    background-position: right center; 
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+}
+
+.hero__inner {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.hero__content {
+    margin-top: 250px;
+}
+
+.hero__title {
+    color: var(--general-text);
+    font-family: "NAMU Pro";
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 1.03;
+    max-width: 556px;
+    margin-bottom: 40px;
+    width: 556px;
+}
+
+.hero__text {
+    color: var(--general-text);
+    font-family: "Open Sans";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: left;
+    width: 554px;
+    margin-bottom: 90px;
+}
+
+.hero__button {
+    font-family: "Open Sans";
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-bg-2);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    width: 235px;
+    height: 64px;
+    color: var(--general-bg);
+}
+
+.hero__img {
+    position: absolute;
+    height: 1000px;
+}
